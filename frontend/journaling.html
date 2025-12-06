@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journaling - MoodShift</title>
+  <link rel="stylesheet" href="styles/styles/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">🌈 MoodShift</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li><a href="features.html" class="nav-item">Features</a></li>
+        <li><a href="insights.html" class="nav-item">Insights</a></li>
+        <li><a href="community.html" class="nav-item">Community</a></li>
+        <li><a href="dashboard.html" class="nav-item dashboard-link">Dashboard</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="journal-hero">
+    <div class="hero-content">
+      <h1>Your Personal Journal</h1>
+      <p>Reflect, explore, and document your emotional journey</p>
+    </div>
+  </section>
+
+  <!-- Journal Container -->
+  <section class="journal-main">
+    <div class="journal-container">
+      <!-- New Entry Section -->
+      <div class="new-entry-section">
+        <h2>Create New Entry</h2>
+        <div class="entry-form">
+          <div class="form-group">
+            <label for="entry-title">Title</label>
+            <input type="text" id="entry-title" placeholder="Give your entry a title...">
+          </div>
+
+          <div class="form-group">
+            <label for="entry-mood">How are you feeling?</label>
+            <div class="mood-selector-inline">
+              <button class="mood-btn-inline calm">Calm</button>
+              <button class="mood-btn-inline energetic">Energetic</button>
+              <button class="mood-btn-inline mystery">Mystery</button>
+              <button class="mood-btn-inline happy">Happy</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="entry-text">Your Thoughts</label>
+            <textarea id="entry-text" placeholder="Write your feelings, thoughts, and reflections here..." rows="8"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="entry-tags">Tags (comma-separated)</label>
+            <input type="text" id="entry-tags" placeholder="e.g. gratitude, work, family, health">
+          </div>
+
+          <div class="form-actions">
+            <button class="btn-save">Save Entry</button>
+            <button class="btn-draft">Save as Draft</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Entries Feed -->
+      <div class="entries-feed">
+        <h2>Your Journal Entries</h2>
+        <div class="entries-list">
+          <!-- Entry 1 -->
+          <div class="journal-entry calm-entry">
+            <div class="entry-header">
+              <div class="entry-mood-badge calm">☮️ Calm</div>
+              <span class="entry-date">Today, 10:30 AM</span>
+            </div>
+            <h3 class="entry-title">Morning Meditation & Gratitude</h3>
+            <p class="entry-preview">Started my day with a 20-minute meditation session. Feeling grounded and appreciative of the small things. The morning light was beautiful, and I took time to journal about what I'm grateful for...</p>
+            <div class="entry-tags">
+              <span class="tag">gratitude</span>
+              <span class="tag">meditation</span>
+              <span class="tag">mindfulness</span>
+            </div>
+            <div class="entry-actions">
+              <a href="#" class="entry-link">Read Full Entry</a>
+              <span class="entry-likes">❤️ 24</span>
+            </div>
+          </div>
+
+          <!-- Entry 2 -->
+          <div class="journal-entry energetic-entry">
+            <div class="entry-header">
+              <div class="entry-mood-badge energetic">⚡ Energetic</div>
+              <span class="entry-date">Yesterday, 6:15 PM</span>
+            </div>
+            <h3 class="entry-title">Accomplished Major Project Milestone</h3>
+            <p class="entry-preview">Had such a productive day! Finally finished the presentation that's been taking up so much mental space. The team was impressed, and I'm feeling incredibly proud of what we accomplished together...</p>
+            <div class="entry-tags">
+              <span class="tag">work</span>
+              <span class="tag">achievement</span>
+              <span class="tag">team</span>
+            </div>
+            <div class="entry-actions">
+              <a href="#" class="entry-link">Read Full Entry</a>
+              <span class="entry-likes">❤️ 45</span>
+            </div>
+          </div>
+
+          <!-- Entry 3 -->
+          <div class="journal-entry happy-entry">
+            <div class="entry-header">
+              <div class="entry-mood-badge happy">✨ Happy</div>
+              <span class="entry-date">2 days ago, 8:45 PM</span>
+            </div>
+            <h3 class="entry-title">Unexpected Reunion with Old Friends</h3>
+            <p class="entry-preview">Ran into some college friends at the coffee shop! We ended up spending three hours catching up and laughing like old times. Reminded me how important these connections are and how quickly we fall back into our rhythm...</p>
+            <div class="entry-tags">
+              <span class="tag">friendship</span>
+              <span class="tag">nostalgia</span>
+              <span class="tag">joy</span>
+            </div>
+            <div class="entry-actions">
+              <a href="#" class="entry-link">Read Full Entry</a>
+              <span class="entry-likes">❤️ 67</span>
+            </div>
+          </div>
+
+          <!-- Entry 4 -->
+          <div class="journal-entry mystery-entry">
+            <div class="entry-header">
+              <div class="entry-mood-badge mystery">🌙 Mystery</div>
+              <span class="entry-date">3 days ago, 11:20 PM</span>
+            </div>
+            <h3 class="entry-title">Late Night Reflections on Life Direction</h3>
+            <p class="entry-preview">Couldn't sleep tonight, so I spent time thinking about my life path. Where am I heading? Is this what I really want? There's a strange beauty in the uncertainty and the questions without immediate answers...</p>
+            <div class="entry-tags">
+              <span class="tag">reflection</span>
+              <span class="tag">growth</span>
+              <span class="tag">identity</span>
+            </div>
+            <div class="entry-actions">
+              <a href="#" class="entry-link">Read Full Entry</a>
+              <span class="entry-likes">❤️ 31</span>
+            </div>
+          </div>
+
+          <!-- Entry 5 -->
+          <div class="journal-entry calm-entry">
+            <div class="entry-header">
+              <div class="entry-mood-badge calm">☮️ Calm</div>
+              <span class="entry-date">4 days ago, 4:00 PM</span>
+            </div>
+            <h3 class="entry-title">Afternoon in Nature</h3>
+            <p class="entry-preview">Took a walk in the park today. The trees were golden in the afternoon light, and I felt my shoulders drop with every step. Nature has a way of putting things in perspective. Sometimes we just need to breathe...</p>
+            <div class="entry-tags">
+              <span class="tag">nature</span>
+              <span class="tag">peace</span>
+              <span class="tag">wellness</span>
+            </div>
+            <div class="entry-actions">
+              <a href="#" class="entry-link">Read Full Entry</a>
+              <span class="entry-likes">❤️ 52</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="journal-sidebar">
+      <div class="sidebar-section">
+        <h3>Quick Stats</h3>
+        <div class="quick-stats">
+          <div class="stat">
+            <div class="stat-number">32</div>
+            <div class="stat-label">Total Entries</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">8</div>
+            <div class="stat-label">This Month</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">156</div>
+            <div class="stat-label">Total Words</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Popular Tags</h3>
+        <div class="tag-cloud">
+          <span class="tag-item large">gratitude</span>
+          <span class="tag-item">work</span>
+          <span class="tag-item large">health</span>
+          <span class="tag-item">family</span>
+          <span class="tag-item">growth</span>
+          <span class="tag-item large">reflection</span>
+          <span class="tag-item">joy</span>
+          <span class="tag-item">friendship</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Writing Prompts</h3>
+        <div class="prompts-list">
+          <div class="prompt">
+            <p>"What am I grateful for today?"</p>
+          </div>
+          <div class="prompt">
+            <p>"What challenged me this week?"</p>
+          </div>
+          <div class="prompt">
+            <p>"Who do I want to thank?"</p>
+          </div>
+          <div class="prompt">
+            <p>"What brings me joy?"</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 MoodShift Journal. Your story, your way.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
