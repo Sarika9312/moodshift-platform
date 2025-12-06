@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodShift Dashboard</title>
+  <link rel="stylesheet" href="styles/styles/style.css">
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-container">
+    <!-- Header -->
+    <header class="dashboard-header">
+      <div class="header-content">
+        <h1 class="app-name">MoodShift</h1>
+        <div class="header-right">
+          <span class="welcome-text">Welcome, User</span>
+          <a href="index.html" class="back-btn">← Back to Home</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <ul class="nav-list">
+          <li><a href="#overview" class="nav-link active">Overview</a></li>
+          <li><a href="#history" class="nav-link">Mood History</a></li>
+          <li><a href="#stats" class="nav-link">Statistics</a></li>
+          <li><a href="#profile" class="nav-link">Profile</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+      <!-- Overview Section -->
+      <section id="overview" class="dashboard-section">
+        <h2 class="section-title">Today's Mood</h2>
+        <div class="mood-selector">
+          <button class="mood-btn calm">Calm</button>
+          <button class="mood-btn energetic">Energetic</button>
+          <button class="mood-btn mystery">Mystery</button>
+          <button class="mood-btn happy">Happy</button>
+        </div>
+        <div class="mood-input-area">
+          <textarea placeholder="Add a note about your mood..." class="mood-note"></textarea>
+          <button class="submit-btn">Save Mood</button>
+        </div>
+      </section>
+
+      <!-- Mood History Section -->
+      <section id="history" class="dashboard-section">
+        <h2 class="section-title">Mood History</h2>
+        <div class="mood-cards-container">
+          <!-- Placeholder Cards -->
+          <div class="mood-card calm-card">
+            <div class="card-header">
+              <span class="card-mood">Calm</span>
+              <span class="card-date">Today, 9:30 AM</span>
+            </div>
+            <p class="card-note">Started the day with meditation and coffee.</p>
+          </div>
+
+          <div class="mood-card energetic-card">
+            <div class="card-header">
+              <span class="card-mood">Energetic</span>
+              <span class="card-date">Today, 2:15 PM</span>
+            </div>
+            <p class="card-note">Great workout session, feeling productive!</p>
+          </div>
+
+          <div class="mood-card happy-card">
+            <div class="card-header">
+              <span class="card-mood">Happy</span>
+              <span class="card-date">Yesterday, 6:00 PM</span>
+            </div>
+            <p class="card-note">Had a wonderful time with friends.</p>
+          </div>
+
+          <div class="mood-card mystery-card">
+            <div class="card-header">
+              <span class="card-mood">Mystery</span>
+              <span class="card-date">Yesterday, 11:00 PM</span>
+            </div>
+            <p class="card-note">Contemplating life's mysteries under the stars.</p>
+          </div>
+
+          <div class="mood-card calm-card">
+            <div class="card-header">
+              <span class="card-mood">Calm</span>
+              <span class="card-date">2 days ago, 5:30 PM</span>
+            </div>
+            <p class="card-note">Evening walk by the park, very peaceful.</p>
+          </div>
+
+          <div class="mood-card energetic-card">
+            <div class="card-header">
+              <span class="card-mood">Energetic</span>
+              <span class="card-date">3 days ago, 10:00 AM</span>
+            </div>
+            <p class="card-note">Completed the project ahead of schedule!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics Section -->
+      <section id="stats" class="dashboard-section">
+        <h2 class="section-title">This Week's Stats</h2>
+        <div class="stats-grid">
+          <div class="stat-box calm-stat">
+            <h3>Calm</h3>
+            <p class="stat-number">12</p>
+            <p class="stat-label">moments</p>
+          </div>
+          <div class="stat-box energetic-stat">
+            <h3>Energetic</h3>
+            <p class="stat-number">8</p>
+            <p class="stat-label">moments</p>
+          </div>
+          <div class="stat-box mystery-stat">
+            <h3>Mystery</h3>
+            <p class="stat-number">5</p>
+            <p class="stat-label">moments</p>
+          </div>
+          <div class="stat-box happy-stat">
+            <h3>Happy</h3>
+            <p class="stat-number">15</p>
+            <p class="stat-label">moments</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Profile Section -->
+      <section id="profile" class="dashboard-section">
+        <h2 class="section-title">Profile</h2>
+        <div class="profile-info">
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Email:</strong> john.doe@example.com</p>
+          <p><strong>Member Since:</strong> January 2024</p>
+          <p><strong>Total Moods Logged:</strong> 127</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
